@@ -1,6 +1,6 @@
 var starImg, fairyImg, bgImg;
 var fairy , fairyVoice;
-var star, starBody;
+var star, starBody; 
 
 const Engine = Matter.Engine;
 const World = Matter.World;
@@ -42,7 +42,8 @@ function setup() {
 
 function draw() {
   background(bgImg);
-
+  Engine.update(engine)
+  star.x=starBody.position.x
   drawSprites();
 
 }
